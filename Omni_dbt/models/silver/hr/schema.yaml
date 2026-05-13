@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_hr_employees
+    columns:
+      - name: employee_id
+        tests: [not_null, unique]
+      - name: department
+        tests: [not_null]
+
+  - name: stg_hr_payroll_runs
+    columns:
+      - name: employee_id
+        tests: [not_null]
+      - name: gross_salary
+        tests: [not_null]
+      - name: paye_monthly
+        tests: [not_null]
+      - name: net_salary_payable
+        tests: [not_null]

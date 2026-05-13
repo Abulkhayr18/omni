@@ -1,0 +1,28 @@
+name: omni_dbt
+version: "1.0.0"
+config-version: 2
+
+profile: omni_dbt
+
+model-paths: ["models"]
+test-paths:  ["tests"]
+log-path:    "logs"
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  omni_dbt:
+    silver:
+      +materialized: view
+      hr:
+        +schema: silver
+      market:
+        +schema: silver
+    quarantine:
+      +materialized: table
+      +file_format: delta
+      +schema: quarantine
+    gold:
+      +materialized: table
+      +file_format: delta
+      +schema: gold

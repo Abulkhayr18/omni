@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: quarantine_all_bad_records
+    columns:
+      - name: domain
+        tests: [not_null]
+      - name: rejection_reason
+        tests: [not_null]

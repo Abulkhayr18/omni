@@ -1,0 +1,8 @@
+version: 2
+sources:
+  - name: bronze
+    schema: bronze
+    tables:
+      - name: hr_employees_raw
+      - name: hr_payroll_runs
+      - name: market_exchange_rates_raw

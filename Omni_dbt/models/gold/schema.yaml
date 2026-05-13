@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: mart_hr_paye_detail
+    columns:
+      - name: employee_id
+        tests: [not_null, unique]
+      - name: net_salary
+        tests: [not_null]
+
+  - name: mart_finance_journal_entries
+    columns:
+      - name: payroll_run_month
+        tests: [not_null]
+      - name: account_name
+        tests: [not_null]
+      - name: amount
+        tests: [not_null]
+
+  - name: mart_finance_remittance_schedule
+    columns:
+      - name: payroll_run_month
+        tests: [not_null, unique]
+      - name: paye_to_remit
+        tests: [not_null]

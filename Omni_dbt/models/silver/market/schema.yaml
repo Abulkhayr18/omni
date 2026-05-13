@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: stg_market_exchange_rates
+    columns:
+      - name: pair
+        tests: [not_null]
+      - name: rate
+        tests: [not_null]
