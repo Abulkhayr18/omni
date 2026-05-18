@@ -177,3 +177,23 @@ See `docs/excel_integration.md` for the full Power Query setup guide.
 - Statutory remittance schedule with legally correct due dates for FIRS, PFA, FMBN, and NHIS
 - Excel template with live Power Query refresh and validation tab — finance team never copies and pastes
 - Architecture mirrors how Rippling, Gusto, and Deel handle multi-domain HR and payroll data
+
+##Screenshots
+###DataBricks Workspace Output
+<img width="1363" height="599" alt="fx_data_ingestion" src="https://github.com/user-attachments/assets/f67f915d-bf42-49b9-87f2-5ee5ed3129fb" />
+<img width="1324" height="608" alt="paye_payroll (2)" src="https://github.com/user-attachments/assets/be23010a-e997-4c5f-937f-61d9712abd64" />
+<img width="1366" height="604" alt="Bronze_ingestion" src="https://github.com/user-attachments/assets/89440662-c18b-4a66-8972-e3899cfa6fc0" />
+
+### dbt Run Output
+<img width="1366" height="723" alt="dbt_run" src="https://github.com/user-attachments/assets/ff9ab924-fe07-474e-bc27-e9031a08e00a" />
+
+### Pipeline Architecture
+<img width="1759" height="608" alt="Omni_Architecture" src="https://github.com/user-attachments/assets/0d31bbe1-3c92-434a-a243-2aecfa2860b4" />
+
+### Excel 
+<img width="709" height="349" alt="conn" src="https://github.com/user-attachments/assets/4eec4d09-7607-40b1-a47f-9583adae6df5" />
+<img width="1366" height="726" alt="ODBC_Connection" src="https://github.com/user-attachments/assets/edf21c19-8531-45d3-a180-c78b9822fcec" />
+
+### Job Scheduling
+
+
