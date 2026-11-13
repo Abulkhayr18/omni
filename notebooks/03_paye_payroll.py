@@ -41,7 +41,8 @@ spark = (
 lineage = LineageTracker(
     pipeline_name="OMNI",
     transformation_name="PAYE Payroll Calculation",
-    script_name="03_paye_payroll.py"
+    script_name="03_paye_payroll.py",
+    metadata_dir="/Volumes/workspace/omni/lineage_metadata"
 )
 
 
